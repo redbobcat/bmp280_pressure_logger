@@ -15,7 +15,7 @@
  
   
 //here is oversampling controls in CONTROL reg
-#define BMP280_PRES_OVERSAMPLING 0b100 //place here table of P oversamp
+#define BMP280_PRES_OVERSAMPLING 0b011 //place here table of P oversamp
 /* 0b000 Skiped
  * 0b001 Oversampling x1
  * 0b010 Oversampling x2
@@ -24,7 +24,7 @@
  * 0b101 Oversampling x16
  */
  
-#define BMP280_TEMP_OVERSAMPLING 0b100 //place here table of T oversamp
+#define BMP280_TEMP_OVERSAMPLING 0b011 //place here table of T oversamp
 /* 0b000 Skiped
  * 0b001 Oversampling x1
  * 0b010 Oversampling x2
@@ -50,7 +50,7 @@
  * 0b110 2000ms
  * 0b111 4000ms
  */
-#define BMP280_IIR_FILTER 0b011 //IIR filter for measuring
+#define BMP280_IIR_FILTER 0b010 //IIR filter for measuring
 /* 0b000 off
  * 0b001 2
  * 0b010 4
